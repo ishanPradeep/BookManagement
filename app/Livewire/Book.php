@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Livewire;
 
 use App\Models\Author;
 use App\Models\Book as ModelsBook;
@@ -43,10 +43,10 @@ class Book extends Component
         $this->authors = Author::orderBy('id', 'DESC')->get();
         if ($this->search != "") {
             $books = ModelsBook::orderBy('id', 'DESC')->where('book_name', 'LIKE', '%' . $this->search . '%')->paginate(6);
-            return view('livewire.book', compact('books'))->layout('layout.app');
+            return view('livewire.book', compact('books'))->layout('layouts.app');
         } else {
             $books = ModelsBook::orderBy('id', 'DESC')->paginate(6);
-            return view('livewire.book', compact('books'))->layout('layout.app');
+            return view('livewire.book', compact('books'))->layout('layouts.app');
         }
     }
 

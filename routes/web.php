@@ -1,15 +1,18 @@
 <?php
 
+use App\Livewire\Author;
+use App\Livewire\Book;
+use App\Livewire\Category;
+use App\Livewire\Dashboard;
+use App\Livewire\IssueBook;
+use App\Livewire\Publisher;
+use App\Livewire\Report;
+use App\Livewire\Student;
+use App\Livewire\Setting;
+
 use Illuminate\Support\Facades\Route;
-use App\Http\Livewire\Author;
-use App\Http\Livewire\Book;
-use App\Http\Livewire\Dashboard;
-use App\Http\Livewire\Category;
-use App\Http\Livewire\IssueBook;
+
 //use App\Http\Livewire\Loign;
-use App\Http\Livewire\Publisher;
-use App\Http\Livewire\Report;
-use App\Http\Livewire\Student;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -38,6 +41,7 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',])
     Route::get('/student', Student::class)->name('students');
     Route::get('/issue-book', IssueBook::class)->name('issue_book');
     Route::get('/report', Report::class)->name('report');
+    Route::get('/setting', Setting::class)->name('setting');
 
 
 });

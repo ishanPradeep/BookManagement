@@ -1,6 +1,5 @@
 <?php
-
-namespace App\Http\Livewire;
+namespace App\Livewire;
 
 use App\Models\Author as ModelsAuthor;
 use Livewire\Component;
