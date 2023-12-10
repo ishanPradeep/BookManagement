@@ -77,6 +77,9 @@ npm install
 php artisan migrate --seed
 php artisan serve
 
+Weekly backup
+-------------
+php artisan backup:weekly
 
 Information
 -------------
