@@ -821,7 +821,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .border-purple-600 {
   --tw-border-opacity: 1;
-  border-color: rgb(147 51 234 / var(--tw-border-opacity));
+  border-color: rgb(8 88 24 / var(--tw-border-opacity));
 }
 .border-gray-300 {
   --tw-border-opacity: 1;
@@ -845,7 +845,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .bg-purple-600 {
   --tw-bg-opacity: 1;
-  background-color: rgb(147 51 234 / var(--tw-bg-opacity));
+  background-color: rgb(8 88 24 / var(--tw-bg-opacity));
 }
 .bg-black {
   --tw-bg-opacity: 1;
@@ -1053,7 +1053,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .text-purple-600 {
   --tw-text-opacity: 1;
-  color: rgb(147 51 234 / var(--tw-text-opacity));
+  color: rgb(8 88 24 / var(--tw-text-opacity));
 }
 .text-red-600 {
   --tw-text-opacity: 1;
@@ -1232,7 +1232,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .active\:bg-purple-600:active {
   --tw-bg-opacity: 1;
-  background-color: rgb(147 51 234 / var(--tw-bg-opacity));
+  background-color: rgb(8 88 24 / var(--tw-bg-opacity));
 }
 .active\:bg-transparent:active {
   background-color: transparent;
