@@ -29,19 +29,21 @@ use Illuminate\Support\Facades\Route;
 //});
 
 Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',])->group(function () {
-//    Route::get('/dashboard', function () {
-//        return view('dashboard');
-//    })->name('dashboard');
+
+    Route::group(['prefix' => 'admin','middleware' =>['admin']], function () {
+        Route::get('/author', Author::class)->name('author');
+        Route::get('/category', Category::class)->name('category');
+        Route::get('/publisher', Publisher::class)->name('publisher');
+        Route::get('/student', Student::class)->name('students');
+        Route::get('/book', Book::class)->name('book');
+
+    });
 
     Route::get('/dashboard', Dashboard::class)->name('dashboard');
-    Route::get('/author', Author::class)->name('author');
-    Route::get('/category', Category::class)->name('category');
-    Route::get('/publisher', Publisher::class)->name('publisher');
-    Route::get('/book', Book::class)->name('book');
-    Route::get('/student', Student::class)->name('students');
     Route::get('/issue-book', IssueBook::class)->name('issue_book');
     Route::get('/report', Report::class)->name('report');
-    Route::get('/setting', Setting::class)->name('setting');
+
+    Route::get('/setting', Setting::class)->name('setting'); // ToDo
 
 
 });
